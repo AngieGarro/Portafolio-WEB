@@ -23,7 +23,7 @@
                     <nav id="Nav">
                         <a href="#Inicio">Inicio</a>
                         <a href="#Acerca">Acerca de</a>
-                        <a href="#Habilidades">Habilidades</a>
+                        <a href="#habilidades">Habilidades</a>
                         <a href="#Proyectos">Proyectos</a>
                         <a href="#Contacto">Contacto</a>
                     </nav>
@@ -211,7 +211,9 @@
                               </div>
                         </div>
                     </div>
-
+                </div>
+                
+                <div class="fila">
                     <div class="col">
                         <div class="card">
                             <h3>Análisis de Datos</h3> 
@@ -274,10 +276,117 @@
                               </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="card">
+                            <h3>Conocimientos</h3>
+                            
+                            <div id="carouselConoc" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="../Img/Conocimientos/8.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="../Img/Conocimientos/9.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="../Img/Conocimientos/10.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="../Img/Conocimientos/11.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="../Img/Conocimientos/12.png" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselConoc" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselConoc" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- Sección para Proyectos -->
+        <!-- Cada proyecto se categoriza poniendo el nombre del tipo en la clase -->
+        <section id="Proyectos" class="proyectos">
+         <h2>Mis Proyectos</h2>
+         <nav>
+            <a href="javascript:void(0)" class="borde" id="item">Todos</a>
+            <a href="javascript:void(0)" class="borde" id="Frontend">Frontend</a>
+            <a href="javascript:void(0)" class="borde" id="Backend">Backend</a>
+            <a href="javascript:void(0)" class="borde" id="Backend">Aplicaciones Web</a>
+        </nav>
 
+        <div class="galeria">
+            <!-- Galeria Frontend -->
+            <div class="item frontend">
+                <img src="../Img/Proyectos/MommysMusic-Frontend.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>Detalle Breve</span>
+                    <a href="">Ver Proyecto</a>
+                </div>
+            </div>
+            <!-- Galeria Backend -->
+            <div class="item backend">
+                <img src="../Img/Proyectos/MommysMusic-Frontend.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>Detalle Breve</span>
+                    <a href="">Ver Proyecto</a>
+                </div>
+            </div>
+            <!-- Galeria Aplicaciones Web -->
+            <div class="item appWeb">
+                <img src="../Img/Proyectos/MommysMusic-Frontend.jpg" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>Detalle Breve</span>
+                    <a href="">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Sección para Contacto -->
+        <section id="Contacto" class="contacto">
+            <div class="contenedor-contacto">
+                <h2>Contacto</h2>
+                <div class="fila">
+                    <div class="col">
+                        <div class="info">
+                            <h4>Correo Eléctronico</h4>
+                            <p><a href="mailto:moondev7ag@gmail.com"><i class="fa-solid fa-envelope"></i></a>moondev7ag@gmail.com</p>
+                        </div>
+                        <div class="info">
+                            <h4>Teléfono</h4>
+                            <p><a href="https://api.whatsapp.com/send?phone=64788712"><i class="fa-brands fa-whatsapp"></i></a>+(506) 6478-8712</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <form action="">
+                            <input type="text" placeholder="Nombre Completo">
+                            <input type="text"  placeholder="Correo Electrónico">
+                            <input type="text"  placeholder="Teléfono">
+                            <textarea name="" id="" cols="30" rows="10"  placeholder="Mensaje"></textarea>
+                            <input type="submit" value="Enviar Mensaje" class="btn ">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- Sección de Footer -->
+        <footer>
+            <a href="https://www.linkedin.com/in/angie-paola-garro-mart%C3%ADnez/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/AngieGarro"><i class="fa-brands fa-github"></i></a>
+            <strong><p>Copyright &copy; 2024. MOONDEV. All rights reserved.</p></strong>
+        </footer>
+    <!-- Sección de Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
