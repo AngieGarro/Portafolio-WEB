@@ -20,7 +20,7 @@
                     <div class="logo">
                         <img src="../Img/MOONDEV_Logo.png" alt="">
                     </div>
-                    <nav id="Nav">
+                    <nav id="Nav" class="responsive">
                         <a href="#Inicio">Inicio</a>
                         <a href="#Acerca">Acerca de</a>
                         <a href="#habilidades">Habilidades</a>
@@ -312,20 +312,80 @@
                 </div>
             </div>
         </section>
+        <!-- Sección para los Valores -->
+        <section class="valores">
+          <div class="contenedor-valores">
+            <h2>Valores</h2>
+            <div class="slide hi-slide">
+              <div class="hi-prev"></div>
+              <div class="hi-next"></div>
+              <ul>   
+                <li>
+                <div class="slide-content">
+                  <img src="../Img/Valores/13.png" alt="">
+                  <div class="slide-caption">
+                    <h4>Perseverancia</h4>
+                    <p>La determinación de seguir adelante, aprender de los fracasos y persistir hasta alcanzar los objetivos.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide-content">
+                  <img src="../Img/Valores/14.png" alt="">
+                  <div class="slide-caption">
+                    <h4>Liderazgo</h4>
+                    <p>Influir positivamente en otros para lograr objetivos comunes. Inspirar, motivar y guiar a los demás con visión, ética y habilidades de comunicación efectivas.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide-content">
+                  <img src="../Img/Valores/15.png" alt="">
+                  <div class="slide-caption">
+                    <h4>Excelencia</h4>
+                    <p>Buscar constantemente la mejora y la innovación, entregando resultados de alta calidad que superen las expectativas y contribuyan al éxito.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide-content">
+                  <img src="../Img/Valores/16.png" alt="">
+                  <div class="slide-caption">
+                    <h4>Lealtad</h4>
+                    <p>Actuar con integridad, honradez y confianza, manteniendo la confidencialidad cuando sea necesario.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="slide-content">
+                  <img src="../Img/Valores/17.png" alt="">
+                  <div class="slide-caption">
+                    <h4>Respeto</h4>
+                    <p>Valorar a los demás, sus opiniones, ideas y contribuciones. Con cortesía, empatía y consideración, creando un ambiente de trabajo positivo y colaborativo.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <!-- Sección para Proyectos -->
         <!-- Cada proyecto se categoriza poniendo el nombre del tipo en la clase -->
         <section id="Proyectos" class="proyectos">
          <h2>Mis Proyectos</h2>
          <nav>
-            <a href="javascript:void(0)" class="borde" id="item">Todos</a>
-            <a href="javascript:void(0)" class="borde" id="Frontend">Frontend</a>
-            <a href="javascript:void(0)" class="borde" id="Backend">Backend</a>
-            <a href="javascript:void(0)" class="borde" id="Backend">Aplicaciones Web</a>
+            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a href="javascript:void(1)" class="" id="Frontend" onclick="verCategoria('Frontend')">Frontend</a>
+            <a href="javascript:void(2)" class="" id="Backend" onclick="verCategoria('Backend')">Backend</a>
+            <a href="javascript:void(3)" class="" id="AppWeb" onclick="verCategoria('AppWeb')">Aplicaciones Web</a>
         </nav>
 
         <div class="galeria">
             <!-- Galeria Frontend -->
-            <div class="item frontend">
+            <div class="item Frontend">
                 <img src="../Img/Proyectos/MommysMusic-Frontend.jpg" alt="">
                 <div class="info">
                     <h3>Titulo del Trabajo</h3>
@@ -333,24 +393,72 @@
                     <a href="">Ver Proyecto</a>
                 </div>
             </div>
+            <div class="item Frontend">
+              <img src="../Img/Proyectos/MommysMusic-Frontend.jpg" alt="">
+              <div class="info">
+                  <h3>Titulo del Trabajo</h3>
+                  <span>Detalle Breve</span>
+                  <a href="">Ver Proyecto</a>
+              </div>
+          </div>
+          <div class="item Frontend">
+            <img src="../Img/Proyectos/MommysMusic-Frontend.jpg" alt="">
+            <div class="info">
+                <h3>Titulo del Trabajo</h3>
+                <span>Detalle Breve</span>
+                <a href="">Ver Proyecto</a>
+            </div>
+        </div>
             <!-- Galeria Backend -->
-            <div class="item backend">
-                <img src="../Img/Proyectos/MommysMusic-Frontend.jpg" alt="">
+            <div class="item Backend">
+                <img src="../Img/Conocimientos/12.png" alt="">
                 <div class="info">
                     <h3>Titulo del Trabajo</h3>
                     <span>Detalle Breve</span>
                     <a href="">Ver Proyecto</a>
                 </div>
             </div>
+            <div class="item Backend">
+              <img src="../Img/Conocimientos/12.png" alt="">
+              <div class="info">
+                  <h3>Titulo del Trabajo</h3>
+                  <span>Detalle Breve</span>
+                  <a href="">Ver Proyecto</a>
+              </div>
+          </div>
+          <div class="item Backend">
+            <img src="../Img/Conocimientos/12.png" alt="">
+            <div class="info">
+                <h3>Titulo del Trabajo</h3>
+                <span>Detalle Breve</span>
+                <a href="">Ver Proyecto</a>
+            </div>
+        </div>
             <!-- Galeria Aplicaciones Web -->
-            <div class="item appWeb">
-                <img src="../Img/Proyectos/MommysMusic-Frontend.jpg" alt="">
+            <div class="item AppWeb">
+                <img src="../Img/Conocimientos/8.png" alt="">
                 <div class="info">
                     <h3>Titulo del Trabajo</h3>
                     <span>Detalle Breve</span>
                     <a href="">Ver Proyecto</a>
                 </div>
             </div>
+            <div class="item AppWeb">
+              <img src="../Img/Conocimientos/8.png" alt="">
+              <div class="info">
+                  <h3>Titulo del Trabajo</h3>
+                  <span>Detalle Breve</span>
+                  <a href="">Ver Proyecto</a>
+              </div>
+          </div>
+          <div class="item AppWeb">
+            <img src="../Img/Conocimientos/8.png" alt="">
+            <div class="info">
+                <h3>Titulo del Trabajo</h3>
+                <span>Detalle Breve</span>
+                <a href="">Ver Proyecto</a>
+            </div>
+        </div>
         </div>
         </section>
         <!-- Sección para Contacto -->
@@ -387,6 +495,10 @@
             <strong><p>Copyright &copy; 2024. MOONDEV. All rights reserved.</p></strong>
         </footer>
     <!-- Sección de Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="../JS/plugins-Slides/hislide/jquery.hislide.js"></script>
+    <script src="../JS/plugins-Slides/hislide/jquery.hislide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../JS/app.js"></script>
 </body>
 </html>

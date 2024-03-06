@@ -63,7 +63,7 @@ body{
 
 .inicio .redes a{
     text-decoration: none;
-    color:#5e17ebff;
+    color:#fff;
     display: inline-block;
     margin: 0 10px; 
 }
@@ -146,7 +146,7 @@ body{
     border-radius: 50%;
     transition: .3s;
     cursor: pointer;
-    /*display: none; */
+    display: none; 
 }
 
 #icono-nav:hover{
@@ -160,6 +160,7 @@ body{
     padding: 0 20px;
     position: relative;
     top: -100px;
+    z-index: 10;
 }
 
 .acerca .fila{
@@ -273,6 +274,134 @@ body{
   margin-bottom: 20px;
    color: #fff;
 }
+/* SECCIÓN DE VALORES */
+.valores .contenedor-valores {
+  margin-bottom: 50px;
+  max-width: 1100px;
+  margin: auto;
+}
+.valores{
+  padding: 80px 20px;
+  margin-bottom: 20px;
+}
+
+.valores h2{
+  margin-bottom: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+.valores .hi-slide{
+  margin-top: 0;
+  position: relative;
+  width: 580px;
+  height: 250px;
+  border-radius: 50px;
+  margin: 125px auto 0;
+}
+.valores .hi-slide .hi-next,
+.valores .hi-slide .hi-prev{
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #5e17ebff;
+  color: white;
+  transition: all 0.9s;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.valores .hi-slide .hi-next:hover,
+.valores .hi-slide .hi-prev:hover{
+  opacity: 1;
+  background-color: white;
+  color: #5e17ebff;
+}
+
+.valores .hi-slide .hi-prev{
+  left: -50px;
+}
+
+.valores .hi-slide .hi-prev::before{
+  content: '<';
+}
+
+.valores .hi-slide .hi-next{
+  right: -220px;
+}
+
+.valores .hi-slide .hi-next::before{
+  content: '>';
+}
+
+.valores .hi-slide > ul{
+  list-style: none;
+  position: relative;
+  width: 580px;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+.valores .hi-slide > ul > li {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Ajusta el ancho al 100% */
+  height: 100%; /* Ajusta la altura al 100% */
+  margin: 0;
+  padding: 0;
+}
+ 
+.valores .hi-slide .slide-content{
+  background-color: #000;
+  border: 1px solid #ff39b3ff;
+}
+
+.valores .hi-slide > ul > li > .slide-content {
+  position: relative;
+  width: 100%; /* Ajusta el ancho al 100% */
+  height: 100%; /* Ajusta la altura al 100% */
+}
+
+.valores .hi-slide > ul > li > .slide-content img {
+  width: 100%; /* Ajusta el ancho al 100% */
+  height: 100%; /* Ajusta la altura al 100% */
+}
+
+.slide-caption {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: #fff;
+}
+
+.slide-content:hover .slide-caption {
+  display: block;
+}
+
+.slide-caption h4{
+  color: #fff;
+  margin-top: 10px;
+}
+
+.slide-caption p{
+  color: #fff;
+  display: inline-block;
+  margin: 0 3px;
+  padding: 0 5px;
+}
 
 /* SECCIÓN DE PROYECTOS */
 .proyectos{
@@ -306,9 +435,9 @@ body{
   border: 3px solid #ff39b3ff;
 }
 
-/* Esta clase se agrega dinamicamente cuando haya seleccionado una opción*/
+/* Esta clase se agrega dinamicamente cuando haya seleccionado una opción */
 .borde{
-  border: 3px solid #ff39b3ff;
+  border: 3px solid #ff39b3ff !important;
 }
 
 .proyectos .galeria .item img{
@@ -457,4 +586,108 @@ footer a{
   padding: 5px 5px;
   text-transform: uppercase;
   border: 2px solid transparent;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:1180px){
+  .inicio{
+      clip-path: none;
+  }
+}
+@media screen and (max-width:800px){
+  .redes{
+      display: none;
+  }
+  #Nav{
+      display: none;
+  }
+  #Nav.responsive{
+      background-color: rgba(0,0,0,.9);
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 99;
+  }
+  #Nav.responsive a{
+      font-size: 30px;
+  }
+  #icono-nav{
+      display: block;
+  }
+
+  .inicio{
+      height: auto;
+  }
+  .inicio .fila{
+      display: block;
+  }
+  .inicio .fila .col{
+      width: 100%;
+      text-align: center;
+  }
+  .inicio .fila .col h2{
+      margin-top: 20px;
+  }
+  .inicio .fila .col .contenedor-img{
+      width: 50%;
+      margin-top: 30px;
+  }
+
+  .acerca{
+      position: static;
+      padding: 20px;
+  }
+  .acerca .fila{
+      display: block;
+      margin-bottom: 0;
+  }
+  .acerca .fila .col{
+      width: 70%;
+      margin: auto;
+  }
+  .acerca .fila .col .card{
+      margin-bottom: 20px;
+  }
+  .habilidades{
+      position: static;
+      padding: 20px;
+    }
+    .habilidades .fila{
+      display: block;
+      margin-bottom: 0;
+    }
+    .habilidades .fila .col{
+      width: 70%;
+      margin: auto;
+    }
+    .habilidades .fila .col .card{
+      margin-bottom: 20px;
+    }
+
+  .proyectos nav a{
+      margin: 0 5px;
+  }
+
+  .contacto .fila{
+      display:  block !important;
+  }
+  .contacto .fila .col{
+      text-align: center;
+      width: 100% !important;
+  }
+  .contacto .fila .col .info{
+      float: left;
+      font-size: 12px;
+      width: 50%;
+  }
+  .contacto .fila .col .info h4{
+    display: none;
+  }
 }
