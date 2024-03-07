@@ -119,19 +119,16 @@ body{
     margin-bottom: 20px;
   }
 
-  .contenedor-texto button{
-    background: none;
-    width: fit-content;
-    padding: 5px 40px;
-    border: 2px solid #ff39b3ff;
+  .contenedor-texto a{
     color: #fff;
-    background: linear-gradient(to right, #ff39b3ff, #5e17ebff);
-    transition: .5s;
-    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #ff39b3ff;
   }
 
-  .contenedor-texto button:hover{
+  .contenedor-texto a:hover{
     transform: scale(1.1);
+    border: 2px solid #ff39b3ff;
   }
   
   .contenedor-texto h4 {
@@ -481,14 +478,27 @@ body{
   border: 2px solid #5e17ebff;
   margin: 0 3px;
   padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+.proyectos .galeria .item .info p{
+  color: #fff;
+  margin: 0 3px;
+  padding: 0 5px;
 }
 
 .proyectos .galeria .item .info a{
   display: block;
   margin: 20px;
-  text-decoration: none;
   color:#5e17ebff;
+  text-decoration: none;
+  border-radius: 2px;
   font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px;
+
 }
 
 .proyectos .galeria .item:hover .info{
