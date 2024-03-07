@@ -572,6 +572,42 @@ body{
   transform: scale(1.1);
 }
 
+/* Botón de Scroll */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border: 3px solid #ff39b3ff;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  z-index: 1000;
+}
+
+#scrollToTopBtn:hover {
+  opacity: 0.7;
+}
+
+.btnIdioma{
+  border: 2px solid #ff39b3ff;
+  color: #fff;
+  background: linear-gradient(to right, #000, #5e17ebff);
+  transition: .5s;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.btnIdioma i{
+  color:#fff;
+}
+
 footer{
   background-color: #000;
   color: #fff;

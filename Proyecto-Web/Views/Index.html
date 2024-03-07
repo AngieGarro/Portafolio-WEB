@@ -21,11 +21,12 @@
                         <img src="../Img/MOONDEV_Logo.png" alt="">
                     </div>
                     <nav id="Nav" class="responsive">
-                        <a href="#Inicio">Inicio</a>
-                        <a href="#Acerca">Acerca de</a>
-                        <a href="#habilidades">Habilidades</a>
-                        <a href="#Proyectos">Proyectos</a>
-                        <a href="#Contacto">Contacto</a>
+                        <a id="a1" href="#Inicio">Inicio</a>
+                        <a id="a2" href="#Acerca">Acerca de</a>
+                        <a id="a3" href="#habilidades">Habilidades</a>
+                        <a id="a4" href="#Proyectos">Proyectos</a>
+                        <a id="a5" href="#Contacto">Contacto</a>
+                        <button id="cambioIdiomaBtn" class="btnIdioma"><i class="fa-solid fa-language"></i> Idioma</button>
                     </nav>
                     <!-- Icono del menu responsive -->
                     <div id="icono-nav">
@@ -33,19 +34,19 @@
                     </div>
                     <!-- Redes -->
                     <div class="redes">
-                        <a href="mailto:moondev7ag@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a title="Mail" href="mailto:moondev7ag@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                         <a href="https://www.linkedin.com/in/angie-paola-garro-mart%C3%ADnez/"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/AngieGarro"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=64788712"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a title="WhatsApp"  href="https://api.whatsapp.com/send?phone=64788712"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </header>
                 <div class="fila">
                     <div class="col">
                         <div class="contenedor-texto">
                             <h2>Angie Garro Martínez</h2>
-                            <h4>Desarrolladora de Software</h4>
-                            <p>Transformando ideas en experiencias digitales</p>
-                            <button class="btn btn-1">Descargar CV</button>
+                            <h4 id="subtituloInicio">Desarrolladora de Software</h4>
+                            <p id="textoInicio">Transformando ideas en experiencias digitales</p>
+                            <button id="DoadCv" class="btn btn-1">Descargar CV</button>
                         </div>
                     </div>
                     <div class="col">
@@ -66,8 +67,8 @@
                                 <i class="fa-solid fa-address-card"></i>
                             </div>
                         </div>
-                        <h3>Perfil Profesional</h3>
-                        <p>Desarrolladora de Software full stack, con experiencia en diversos lenguajes de programación, 
+                        <h3 id="perfilProfesional">Perfil Profesional</h3>
+                        <p id="textoPerfilProfesional">Desarrolladora de Software full stack, con experiencia en diversos lenguajes de programación, 
                             con conocimientos en distintos frameworks y bases de datos relacionales, apasionada por crear 
                             soluciones innovadoras y funcionales que mejoren la experiencia del usuario. 
                         </p>
@@ -80,8 +81,8 @@
                                 <i class="fa-solid fa-briefcase"></i>
                             </div>
                         </div>
-                        <h3>Misión</h3>
-                        <p>Crear soluciones tecnológicas innovadoras que transforman ideas en realidades 
+                        <h3 id="mision">Misión</h3>
+                        <p id="textoMision">Crear soluciones tecnológicas innovadoras que transforman ideas en realidades 
                             digitales, aplicándolas con excelencia y respeto por el cliente para proporcionar 
                             productos de calidad que generen un impacto positivo.                            
                         </p>
@@ -94,8 +95,8 @@
                                 <i class="fa-solid fa-award"></i>
                             </div>
                         </div>
-                        <h3>Visión</h3>
-                        <p>Llegar a ser una líder en el diseño y desarrollo de software, reconocida 
+                        <h3 id="vision">Visión</h3>
+                        <p id="textoVision">Llegar a ser una líder en el diseño y desarrollo de software, reconocida 
                             por la lealtad hacia la excelencia técnica y el compromiso con la innovación, 
                             ofreciendo soluciones digitales que inspiran y mejoran la vida de las personas.
                         </p>
@@ -106,11 +107,11 @@
         <!-- Sección de Habilidades -->
         <section id="habilidades" class="habilidades">
             <div class="contenedor-habil">
-                <h2>Habilidades</h2>
+                <h2 id="tituloHabilidades">Habilidades</h2>
                 <div class="fila">
                     <div class="col">
                         <div class="card">
-                            <h3>Programación</h3>
+                            <h3 id="tituloProgramacion">Programación</h3>
                             
                             <div id="carouselProgra" class="carousel slide">
                                 <div class="carousel-inner">
@@ -187,7 +188,7 @@
 
                     <div class="col">
                         <div class="card">
-                            <h3>Bases de Datos</h3>
+                            <h3 id="tituloBD">Bases de Datos</h3>
                             <div id="carouselBD" class="carousel slide">
                                 <div class="carousel-inner">
                                   <div class="carousel-item active">
@@ -216,7 +217,7 @@
                 <div class="fila">
                     <div class="col">
                         <div class="card">
-                            <h3>Análisis de Datos</h3> 
+                            <h3 id="tituloDataAnalic">Análisis de Datos</h3> 
                             <div id="carouselData" class="carousel slide">
                                 <div class="carousel-inner">
                                   <div class="carousel-item active">
@@ -242,7 +243,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <h3>Herramientas</h3>
+                            <h3 id="tituloTools">Herramientas</h3>
                             
                             <div id="carouselTools" class="carousel slide">
                                 <div class="carousel-inner">
@@ -278,7 +279,7 @@
                     </div>
                     <div class="col">
                         <div class="card">
-                            <h3>Conocimientos</h3>
+                            <h3 id="tituloConocimientos">Conocimientos</h3>
                             
                             <div id="carouselConoc" class="carousel slide">
                                 <div class="carousel-inner">
@@ -293,9 +294,6 @@
                                   </div>
                                   <div class="carousel-item">
                                     <img src="../Img/Conocimientos/11.png" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img src="../Img/Conocimientos/12.png" class="d-block w-100" alt="...">
                                   </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselConoc" data-bs-slide="prev">
@@ -315,7 +313,7 @@
         <!-- Sección para los Valores -->
         <section class="valores">
           <div class="contenedor-valores">
-            <h2>Valores</h2>
+            <h2 id="tituloValores">Valores</h2>
             <div class="slide hi-slide">
               <div class="hi-prev"></div>
               <div class="hi-next"></div>
@@ -477,17 +475,19 @@
                         </div>
                     </div>
                     <div class="col">
-                        <form action="">
-                            <input type="text" placeholder="Nombre Completo">
-                            <input type="text"  placeholder="Correo Electrónico">
-                            <input type="text"  placeholder="Teléfono">
-                            <textarea name="" id="" cols="30" rows="10"  placeholder="Mensaje"></textarea>
+                        <form action="https://formspree.io/f/mbjnkdld" method="POST">
+                            <input type="text" name="name" placeholder="Nombre Completo">
+                            <input type="email" name="email" placeholder="Correo Electrónico">
+                            <input type="text" name="phone" placeholder="Teléfono">
+                            <textarea name="mensaje" id="" cols="30" rows="10"  placeholder="Mensaje"></textarea>
                             <input type="submit" value="Enviar Mensaje" class="btn ">
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Botón de Scroll -->
+        <button id="scrollToTopBtn" title="Ir arriba">↑</button>
          <!-- Sección de Footer -->
         <footer>
             <a href="https://www.linkedin.com/in/angie-paola-garro-mart%C3%ADnez/"><i class="fa-brands fa-linkedin"></i></a>
@@ -500,5 +500,6 @@
     <script src="../JS/plugins-Slides/hislide/jquery.hislide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../JS/app.js"></script>
+    <script src="../JS/CambioIdioma.js"></script>
 </body>
 </html>

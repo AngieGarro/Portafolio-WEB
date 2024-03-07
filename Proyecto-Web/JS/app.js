@@ -75,3 +75,27 @@ function verCategoria(cat){
             btnEliminar.remove();
         }
     }
+
+// BOTÓN DE SCROLL
+//-------------------------------------------------------------------------------------
+// Obtener el botón de scroll
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Función para mostrar u ocultar el botón de scroll según la posición de la página
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+// Función para desplazarse suavemente hacia arriba cuando se hace clic en el botón
+scrollToTopBtn.onclick = function() {
+  document.body.scrollTop = 0; // Para Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+};
