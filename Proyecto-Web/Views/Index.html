@@ -322,8 +322,8 @@
                 <div class="slide-content">
                   <img src="../Img/Valores/13.png" alt="">
                   <div class="slide-caption">
-                    <h4>Perseverancia</h4>
-                    <p>La determinación de seguir adelante, aprender de los fracasos y persistir hasta alcanzar los objetivos.</p>
+                    <h4 id="perseverancia">Perseverancia</h4>
+                    <p id="perseveranciaTexto">La determinación de seguir adelante, aprender de los fracasos y persistir hasta alcanzar los objetivos.</p>
                   </div>
                 </div>
               </li>
@@ -331,8 +331,8 @@
                 <div class="slide-content">
                   <img src="../Img/Valores/14.png" alt="">
                   <div class="slide-caption">
-                    <h4>Liderazgo</h4>
-                    <p>Influir positivamente en otros para lograr objetivos comunes. Inspirar, motivar y guiar a los demás con visión, ética y habilidades de comunicación efectivas.</p>
+                    <h4 id="liderazgo">Liderazgo</h4>
+                    <p id="liderazgoTexto">Influir positivamente en otros para lograr objetivos comunes. Inspirar, motivar y guiar a los demás con visión, ética y habilidades de comunicación efectivas.</p>
                   </div>
                 </div>
               </li>
@@ -340,8 +340,8 @@
                 <div class="slide-content">
                   <img src="../Img/Valores/15.png" alt="">
                   <div class="slide-caption">
-                    <h4>Excelencia</h4>
-                    <p>Buscar constantemente la mejora y la innovación, entregando resultados de alta calidad que superen las expectativas y contribuyan al éxito.
+                    <h4 id="Excelencia">Excelencia</h4>
+                    <p id="exlenciaTexto">Buscar constantemente la mejora y la innovación, entregando resultados de alta calidad que superen las expectativas y contribuyan al éxito.
                     </p>
                   </div>
                 </div>
@@ -350,8 +350,8 @@
                 <div class="slide-content">
                   <img src="../Img/Valores/16.png" alt="">
                   <div class="slide-caption">
-                    <h4>Lealtad</h4>
-                    <p>Actuar con integridad, honradez y confianza, manteniendo la confidencialidad cuando sea necesario.
+                    <h4 id="Lealtad">Lealtad</h4>
+                    <p id="LealtadTexto">Actuar con integridad, honradez y confianza, manteniendo la confidencialidad cuando sea necesario.
                     </p>
                   </div>
                 </div>
@@ -360,8 +360,8 @@
                 <div class="slide-content">
                   <img src="../Img/Valores/17.png" alt="">
                   <div class="slide-caption">
-                    <h4>Respeto</h4>
-                    <p>Valorar a los demás, sus opiniones, ideas y contribuciones. Con cortesía, empatía y consideración, creando un ambiente de trabajo positivo y colaborativo.
+                    <h4 id="Respeto">Respeto</h4>
+                    <p id="RespetoTexto">Valorar a los demás, sus opiniones, ideas y contribuciones. Con cortesía, empatía y consideración, creando un ambiente de trabajo positivo y colaborativo.
                     </p>
                   </div>
                 </div>
@@ -373,12 +373,12 @@
         <!-- Sección para Proyectos -->
         <!-- Cada proyecto se categoriza poniendo el nombre del tipo en la clase -->
         <section id="Proyectos" class="proyectos">
-         <h2>Mis Proyectos</h2>
+         <h2 id="ProyectosTitulo">Mis Proyectos</h2>
          <nav>
-            <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+            <a id="ProyectosTodos" href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
             <a href="javascript:void(1)" class="" id="Frontend" onclick="verCategoria('Frontend')">Frontend</a>
             <a href="javascript:void(2)" class="" id="Backend" onclick="verCategoria('Backend')">Backend</a>
-            <a href="javascript:void(3)" class="" id="AppWeb" onclick="verCategoria('AppWeb')">Aplicaciones Web</a>
+            <a id="appWebProyectos" href="javascript:void(3)" class="" id="AppWeb" onclick="verCategoria('AppWeb')">Aplicaciones Web</a>
         </nav>
 
         <div class="galeria">
@@ -462,25 +462,25 @@
         <!-- Sección para Contacto -->
         <section id="Contacto" class="contacto">
             <div class="contenedor-contacto">
-                <h2>Contacto</h2>
+                <h2 id="ContactTitulo">Contacto</h2>
                 <div class="fila">
                     <div class="col">
                         <div class="info">
-                            <h4>Correo Eléctronico</h4>
+                            <h4 id="CorreoTitulo">Correo Eléctronico</h4>
                             <p><a href="mailto:moondev7ag@gmail.com"><i class="fa-solid fa-envelope"></i></a>moondev7ag@gmail.com</p>
                         </div>
                         <div class="info">
-                            <h4>Teléfono</h4>
+                            <h4 id="PhoneTitulo">Teléfono</h4>
                             <p><a href="https://api.whatsapp.com/send?phone=64788712"><i class="fa-brands fa-whatsapp"></i></a>+(506) 6478-8712</p>
                         </div>
                     </div>
                     <div class="col">
                         <form action="https://formspree.io/f/mbjnkdld" method="POST">
-                            <input type="text" name="name" placeholder="Nombre Completo">
-                            <input type="email" name="email" placeholder="Correo Electrónico">
-                            <input type="text" name="phone" placeholder="Teléfono">
-                            <textarea name="mensaje" id="" cols="30" rows="10"  placeholder="Mensaje"></textarea>
-                            <input type="submit" value="Enviar Mensaje" class="btn ">
+                            <input type="text" name="name" id="name" placeholder="Nombre Completo">
+                            <input type="email" name="email"  id="email" placeholder="Correo Electrónico">
+                            <input type="text" name="phone"  id="contact" placeholder="Teléfono">
+                            <textarea name="mensaje" id="" cols="30"  id="msj" rows="10"  placeholder="Mensaje"></textarea>
+                            <input type="submit" value="Enviar Mensaje" class="btn "  id="enviarForm">
                         </form>
                     </div>
                 </div>

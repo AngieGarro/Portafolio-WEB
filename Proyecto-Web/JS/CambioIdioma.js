@@ -23,6 +23,18 @@ var tituloDataAnalic = document.getElementById("tituloDataAnalic");
 var tituloTools  = document.getElementById("tituloTools");
 var tituloConocimientos  = document.getElementById("tituloConocimientos");
 
+var tituloValores =  document.getElementById("tituloValores");
+var perseverancia =  document.getElementById("perseverancia");
+var perseveranciaTexto =  document.getElementById("perseveranciaTexto");
+var liderazgo =  document.getElementById("liderazgo");
+var liderazgoTexto =  document.getElementById("liderazgoTexto");
+var Excelencia =  document.getElementById("Excelencia");
+var ExcelenciaTexto =  document.getElementById("ExcelenciaTexto");
+var lealtad =  document.getElementById("Lealtad");
+var lealtadTexto =  document.getElementById("LealtadTexto");
+var respeto =  document.getElementById("Respeto");
+var respetoTexto =  document.getElementById("RespetoTexto");
+
 var cambioIdiomaBtn = document.getElementById("cambioIdiomaBtn");
 
 // Definir textos en español e inglés
@@ -49,7 +61,19 @@ var textos = {
     tituloBD: "Bases de Datos",
     tituloDataAnalic: "Análisis de Datos",
     tituloTools: "Herramientas",
-    tituloConocimientos: "Conocimientos"
+    tituloConocimientos: "Conocimientos",
+
+    tituloValores: "Valores",
+    perseverancia: "Perseverancia",
+    perseveranciaTexto: "La determinación de seguir adelante, aprender de los fracasos y persistir hasta alcanzar los objetivos.",
+    liderazgo: "Liderazgo",
+    liderazgoTexto: "Influir positivamente en otros para lograr objetivos comunes. Inspirar, motivar y guiar a los demás con visión, ética y habilidades de comunicación efectivas.",
+    Excelencia: "Excelencia",
+    ExcelenciaTexto: "Buscar constantemente la mejora y la innovación, entregando resultados de alta calidad que superen las expectativas y contribuyan al éxito.",
+    lealtad: "Lealtad",
+    lealtadTexto: "Actuar con integridad, honradez y confianza, manteniendo la confidencialidad cuando sea necesario.",
+    respeto: "Respeto",
+    respetoTexto: "Valorar a los demás, sus opiniones, ideas y contribuciones. Con cortesía, empatía y consideración, creando un ambiente de trabajo positivo y colaborativo."
 
   },
   inglés: {
@@ -74,34 +98,25 @@ var textos = {
     tituloBD: "Databases",
     tituloDataAnalic: "Data Analysis",
     tituloTools: "Tools",
-    tituloConocimientos: "Knowledge"
+    tituloConocimientos: "Knowledge",
+
+    tituloValores: "Values",
+    perseverancia: "Perseverance",
+    perseveranciaTexto: "The determination to keep going, learn from failures, and persist until goals are achieved.",
+    liderazgo: "Leadership",
+    liderazgoTexto: "Positively influencing others to achieve common goals. Inspiring, motivating, and guiding others with vision, ethics, and effective communication skills.",
+    Excelencia: "Excellence",
+    ExcelenciaTexto: "Constantly seeking improvement and innovation, delivering high-quality results that exceed expectations and contribute to success.",
+    lealtad: "Loyalty",
+    lealtadTexto: "Acting with integrity, honesty, and trust, maintaining confidentiality when necessary.",
+    respeto: "Respect",
+    respetoTexto: "Valuing others, their opinions, ideas, and contributions. With courtesy, empathy, and consideration, creating a positive and collaborative work environment."
   }
 };
 
 // Inicializar idioma en español
 var idiomaActual = "español";
-a1.textContent = textos[idiomaActual].a1;
-a2.textContent = textos[idiomaActual].a2;
-a3.textContent = textos[idiomaActual].a3;
-a5.textContent = textos[idiomaActual].a4;
-a5.textContent = textos[idiomaActual].a5;
-textoInicioAcerca.textContent = textos[idiomaActual].textoInicioAcerca;
-subtituloAcerca.textContent = textos[idiomaActual].subtituloAcerca;
-DescCV.textContent = textos[idiomaActual].DescCV;
 
-perfilTitulo.textContent  = textos[idiomaActual].perfilTitulo;
-perfilTexto.textContent = textos[idiomaActual].perfilTexto;
-misionTitulo.textContent = textos[idiomaActual].misionTitulo;
-misionTexto.textContent = textos[idiomaActual].misionTexto;
-visionTitulo.textContent = textos[idiomaActual].visionTitulo;
-visionTexto.textContent = textos[idiomaActual].visionTexto;
-
-tituloHabilidades.textContent  = textos[idiomaActual].tituloHabilidades;
-tituloProgramacion.textContent = textos[idiomaActual].tituloProgramacion;
-tituloBD.textContent = textos[idiomaActual].tituloBD;
-tituloDataAnalic.textContent = textos[idiomaActual].tituloDataAnalic;
-tituloTools.textContent = textos[idiomaActual].tituloTools;
-tituloConocimientos.textContent = textos[idiomaActual].tituloConocimientos;
 
 // Función para cambiar idioma
 function cambiarIdioma() {
@@ -129,6 +144,17 @@ function cambiarIdioma() {
   tituloTools.textContent = textos[idiomaActual].tituloTools;
   tituloConocimientos.textContent = textos[idiomaActual].tituloConocimientos;
 
+  tituloValores.textContent = textos[idiomaActual].tituloValores;
+  perseverancia.textContent = textos[idiomaActual].perseverancia;
+  perseveranciaTexto.textContent = textos[idiomaActual].perseveranciaTexto;
+  liderazgo.textContent = textos[idiomaActual].liderazgo;
+  liderazgoTexto.textContent = textos[idiomaActual].liderazgoTexto;
+  Excelencia.textContent = textos[idiomaActual].Excelencia;
+  ExcelenciaTexto.textContent = textos[idiomaActual].ExcelenciaTexto;
+  lealtad.textContent = textos[idiomaActual].lealtad;
+  lealtadTexto.textContent = textos[idiomaActual].LealtadTexto;
+  respeto.textContent = textos[idiomaActual].Respeto;
+  respetoTexto.textContent = textos[idiomaActual].RespetoTexto;
 }
 
 // Evento clic del botón para cambiar idioma

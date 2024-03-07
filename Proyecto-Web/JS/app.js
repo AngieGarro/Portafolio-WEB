@@ -15,7 +15,7 @@ $('.hi-next, .hi-prev').on('click', function() {
 $(document).ready(function() {
     intervalo = setInterval(function() {
         $('.hi-next').trigger('click'); // Avanzar al siguiente slide
-    }, 12000); // Cambiar cada 3 segundos (ajusta este valor según tus preferencias)
+    }, 15000); // Cambiar cada 3 segundos (ajusta este valor según tus preferencias)
 });
 
 //Función para filtrar las categorías de los trabajos
