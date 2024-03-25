@@ -29,11 +29,36 @@ var perseveranciaTexto =  document.getElementById("perseveranciaTexto");
 var liderazgo =  document.getElementById("liderazgo");
 var liderazgoTexto =  document.getElementById("liderazgoTexto");
 var Excelencia =  document.getElementById("Excelencia");
-var ExcelenciaTexto =  document.getElementById("ExcelenciaTexto");
+var ExcelenciaTexto =  document.getElementById("excelenciaTexto");
 var lealtad =  document.getElementById("Lealtad");
-var lealtadTexto =  document.getElementById("LealtadTexto");
-var respeto =  document.getElementById("Respeto");
-var respetoTexto =  document.getElementById("RespetoTexto");
+var LealtadTexto =  document.getElementById("LealtadTexto");
+var Respeto =  document.getElementById("respeto");
+var RespetoTexto =  document.getElementById("respetoTexto");
+
+var ProyectosTitulo = document.getElementById("ProyectosTitulo");
+var ProyectosTodos = document.getElementById("ProyectosTodos");
+var ProyectosAppWeb = document.getElementById("appWebProyectos");
+var MMText = document.getElementById("MMText");
+var ACText = document.getElementById("ACText");
+var ASText = document.getElementById("ASText");
+var TreesText = document.getElementById("TreesText");
+var BPText  = document.getElementById("BPText");
+var CPText = document.getElementById("CPText");
+var SPText = document.getElementById("SPText");
+var PYText = document.getElementById("PYText");
+var MTText1 = document.getElementById("MTText1");
+var MTText2 = document.getElementById("MTText2");
+var RGText1 = document.getElementById("RGText1");
+
+var ContactTitulo = document.getElementById("ContactTitulo");
+var CorreoTitulo = document.getElementById("CorreoTitulo");
+var PhoneTitulo = document.getElementById("PhoneTitulo");
+var Name = document.getElementById("name");
+var email = document.getElementById("email");
+var contact = document.getElementById("contact");
+var msj = document.getElementById("msj");
+var enviarFormC = document.getElementById("enviarForm");
+
 
 var cambioIdiomaBtn = document.getElementById("cambioIdiomaBtn");
 
@@ -71,10 +96,33 @@ var textos = {
     Excelencia: "Excelencia",
     ExcelenciaTexto: "Buscar constantemente la mejora y la innovación, entregando resultados de alta calidad que superen las expectativas y contribuyan al éxito.",
     lealtad: "Lealtad",
-    lealtadTexto: "Actuar con integridad, honradez y confianza, manteniendo la confidencialidad cuando sea necesario.",
-    respeto: "Respeto",
-    respetoTexto: "Valorar a los demás, sus opiniones, ideas y contribuciones. Con cortesía, empatía y consideración, creando un ambiente de trabajo positivo y colaborativo."
+    LealtadTexto: "Actuar con integridad, honradez y confianza, manteniendo la confidencialidad cuando sea necesario.",
+    Respeto: "Respeto",
+    RespetoTexto: "Valorar a los demás, sus opiniones, ideas y contribuciones. Con cortesía, empatía y consideración, creando un ambiente de trabajo positivo y colaborativo.",
 
+    ProyectosTitulo: "Mis Proyectos",
+    ProyectosTodos: "Todos",
+    ProyectosAppWeb: "Aplicaciones Web",
+    MMText: "Plataforma de Musicoterapia para Bébes y Padres.",
+    ACText: "Animaciones para diseño de Contenedores de información.",
+    ASText: "Animaciones para diseño de galerías de Aplicaciones",
+    TreesText: "Empleado en Estructura de Datos.",
+    BPText: "Varios Aplicativos",
+    CPText: "Varios Aplicativos",
+    SPText: "Varios Aplicativos",
+    PYText: "Técnicas para el uso de Python.",
+    MTText1: "Boletería en Línea",
+    MTText2: "Desarrollada en Equipo",
+    RGText1: "Venta en línea de repuestos para motos.",
+
+    ContactTitulo: "Contacto",
+    CorreoTitulo: "Correo Electrónico",
+    PhoneTitulo: "Teléfono",
+    Name: "Nombre Completo",
+    email: "Email",
+    contact: "Teléfono",
+    msj: "Mensaje",
+    enviarFormC: "Enviar Mensaje"
   },
   inglés: {
     a1: "Home",
@@ -100,6 +148,7 @@ var textos = {
     tituloTools: "Tools",
     tituloConocimientos: "Knowledge",
 
+    //VALORES
     tituloValores: "Values",
     perseverancia: "Perseverance",
     perseveranciaTexto: "The determination to keep going, learn from failures, and persist until goals are achieved.",
@@ -108,9 +157,36 @@ var textos = {
     Excelencia: "Excellence",
     ExcelenciaTexto: "Constantly seeking improvement and innovation, delivering high-quality results that exceed expectations and contribute to success.",
     lealtad: "Loyalty",
-    lealtadTexto: "Acting with integrity, honesty, and trust, maintaining confidentiality when necessary.",
-    respeto: "Respect",
-    respetoTexto: "Valuing others, their opinions, ideas, and contributions. With courtesy, empathy, and consideration, creating a positive and collaborative work environment."
+    LealtadTexto: "Acting with integrity, honesty, and trust, maintaining confidentiality when necessary.",
+    Respeto: "Respect",
+    RespetoTexto: "Valuing others, their opinions, ideas, and contributions. With courtesy, empathy, and consideration, creating a positive and collaborative work environment.",
+    
+    //PROYECTOS
+    ProyectosTitulo: "My Projects",
+    ProyectosTodos: "All",
+    ProyectosAppWeb: "Web Applications",
+    MMText: "Music Therapy Platform for Babies and Parents.",
+    ACText: "Animations for Information Container Design.",
+    ASText: "Animations for Application Gallery Design.",
+    TreesText: "Employee in Data Structure.",
+    BPText: "Various Applications",
+    CPText: "Various Applications",
+    SPText: "Various Applications",
+    PYText: "Techniques for Python Usage",
+    MTText1: "Online Ticketing",
+    MTText2: "Developed as a Team.",
+    RGText1: "Online Sale of Motorcycle Parts",
+
+    //CONTACTO
+    ContactTitulo: "Contact",
+    CorreoTitulo: "Email",
+    PhoneTitulo: "Phone",
+    Name: "Full Name",
+    email: "Email",
+    contact: "Phone Number", 
+    msj: "Message",
+    enviarFormC: "Send Message"
+
   }
 };
 
@@ -152,9 +228,33 @@ function cambiarIdioma() {
   Excelencia.textContent = textos[idiomaActual].Excelencia;
   ExcelenciaTexto.textContent = textos[idiomaActual].ExcelenciaTexto;
   lealtad.textContent = textos[idiomaActual].lealtad;
-  lealtadTexto.textContent = textos[idiomaActual].LealtadTexto;
-  respeto.textContent = textos[idiomaActual].Respeto;
-  respetoTexto.textContent = textos[idiomaActual].RespetoTexto;
+  LealtadTexto.textContent = textos[idiomaActual].LealtadTexto;
+  Respeto.textContent = textos[idiomaActual].Respeto;
+  RespetoTexto.textContent = textos[idiomaActual].RespetoTexto;
+
+  ProyectosTitulo.textContent = textos[idiomaActual].ProyectosTitulo;
+  ProyectosTodos.textContent = textos[idiomaActual].ProyectosTodos;
+  ProyectosAppWeb.textContent = textos[idiomaActual].ProyectosAppWeb;
+  MMText.textContent = textos[idiomaActual].MMText;
+  ACText.textContent = textos[idiomaActual].ACText;
+  ASText.textContent = textos[idiomaActual].ASText;
+  TreesText.textContent = textos[idiomaActual].TreesText;
+  BPText.textContent = textos[idiomaActual].BPText;
+  CPText.textContent = textos[idiomaActual].CPText;
+  SPText.textContent = textos[idiomaActual].SPText;
+  PYText.textContent = textos[idiomaActual].PYText;
+  MTText1.textContent = textos[idiomaActual].MTText1;
+  MTText2.textContent = textos[idiomaActual].MTText2;
+  RGText1.textContent = textos[idiomaActual].RGText1;
+
+  ContactTitulo.textContent = textos[idiomaActual].ContactTitulo;
+  CorreoTitulo.textContent = textos[idiomaActual].CorreoTitulo; 
+  PhoneTitulo.textContent = textos[idiomaActual].PhoneTitulo;
+  Name.placeholder = textos[idiomaActual].Name;
+  email.placeholder = textos[idiomaActual].email; 
+  contact.placeholder = textos[idiomaActual].contact;
+  msj.placeholder = textos[idiomaActual].msj; 
+  enviarFormC.value = textos[idiomaActual].enviarFormC;
 }
 
 // Evento clic del botón para cambiar idioma
