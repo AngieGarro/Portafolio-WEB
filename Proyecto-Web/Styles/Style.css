@@ -635,105 +635,146 @@ footer a{
 }
 
 /* SECCION RESPONSIVE */
-@media screen and (max-width:1180px){
-  .inicio{
-      clip-path: none;
+@media screen and (max-width: 1180px) {
+  .inicio {
+    clip-path: none;
   }
 }
-@media screen and (max-width:800px){
-  .redes{
-      display: none;
-  }
-  #Nav{
-      display: none;
-  }
-  #Nav.responsive{
-      background-color: rgba(0,0,0,.9);
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100%;
-      position: absolute;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 99;
-  }
-  #Nav.responsive a{
-      font-size: 30px;
-  }
-  #icono-nav{
-      display: block;
-  }
 
-  .inicio{
-      height: auto;
-  }
-  .inicio .fila{
-      display: block;
-  }
-  .inicio .fila .col{
-      width: 100%;
-      text-align: center;
-  }
-  .inicio .fila .col h2{
-      margin-top: 20px;
-  }
-  .inicio .fila .col .contenedor-img{
-      width: 50%;
-      margin-top: 30px;
-  }
-
-  .acerca{
-      position: static;
-      padding: 20px;
-  }
-  .acerca .fila{
-      display: block;
-      margin-bottom: 0;
-  }
-  .acerca .fila .col{
-      width: 70%;
-      margin: auto;
-  }
-  .acerca .fila .col .card{
-      margin-bottom: 20px;
-  }
-  .habilidades{
-      position: static;
-      padding: 20px;
-    }
-    .habilidades .fila{
-      display: block;
-      margin-bottom: 0;
-    }
-    .habilidades .fila .col{
-      width: 70%;
-      margin: auto;
-    }
-    .habilidades .fila .col .card{
-      margin-bottom: 20px;
-    }
-
-  .proyectos nav a{
-      margin: 0 5px;
-  }
-
-  .contacto .fila{
-      display:  block !important;
-  }
-  .contacto .fila .col{
-      text-align: center;
-      width: 100% !important;
-  }
-  .contacto .fila .col .info{
-      float: left;
-      font-size: 12px;
-      width: 50%;
-  }
-  .contacto .fila .col .info h4{
+@media screen and (max-width: 800px) {
+  .redes {
     display: none;
+  }
+  #Nav {
+    display: none;
+  }
+  #Nav.responsive {
+    background-color: rgba(0, 0, 0, .9);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+  }
+  #Nav.responsive a {
+    font-size: 30px;
+  }
+  #icono-nav {
+    display: block;
+  }
+
+  .inicio {
+    height: auto;
+  }
+  .inicio .fila {
+    display: block;
+  }
+  .inicio .fila .col {
+    width: 100%;
+    text-align: center;
+  }
+  .inicio .fila .col h2 {
+    margin-top: 20px;
+  }
+  .inicio .fila .col .contenedor-img {
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .acerca {
+    position: static;
+    padding: 20px;
+  }
+  .acerca .fila {
+    display: block;
+    margin-bottom: 0;
+  }
+  .acerca .fila .col {
+    width: 70%;
+    margin: auto;
+  }
+  .acerca .fila .col .card {
+    margin-bottom: 20px;
+  }
+  .habilidades {
+    position: static;
+    padding: 20px;
+  }
+  .habilidades .fila {
+    display: block;
+    margin-bottom: 0;
+  }
+  .habilidades .fila .col {
+    width: 70%;
+    margin: auto;
+  }
+  .habilidades .fila .col .card {
+    margin-bottom: 20px;
+  }
+
+  .proyectos nav a {
+    margin: 0 5px;
+  }
+
+  .contacto .fila {
+    display: block !important;
+  }
+  .contacto .fila .col {
+    text-align: center;
+    width: 100% !important;
+  }
+  .contacto .fila .col .info {
+    float: left;
+    font-size: 12px;
+    width: 50%;
+  }
+  .contacto .fila .col .info h4 {
+    display: none;
+  }
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+  .inicio header {
+    flex-direction: column;
+  }
+  .inicio .redes {
+    display: none;
+  }
+  .inicio .logo {
+    width: 200px;
+    height: 120px;
+  }
+  .acerca .fila .col {
+    width: 100%;
+  }
+  .habilidades .fila .col {
+    width: 100%;
+  }
+  .valores .hi-slide,
+  .valores .hi-slide .hi-next,
+  .valores .hi-slide .hi-prev {
+    width: 300px;
+    margin: 0 auto;
+    right: unset;
+    left: unset;
+  }
+  .valores .hi-slide .hi-next {
+    right: 0;
+  }
+  .valores .hi-slide .hi-prev {
+    left: 0;
+  }
+  .contacto .contenedor-contacto .fila {
+    flex-direction: column;
+  }
+  .contacto .contenedor-contacto .fila .col {
+    width: 100%;
   }
 }

@@ -99,3 +99,8 @@ scrollToTopBtn.onclick = function() {
   document.body.scrollTop = 0; // Para Safari
   document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
 };
+
+
+document.getElementById('icono-nav').addEventListener('click', function() {
+    document.getElementById('Nav').classList.toggle('mostrar-nav');
+  });
